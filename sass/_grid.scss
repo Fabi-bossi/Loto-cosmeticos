@@ -1,0 +1,12 @@
+$display: grid;
+$grid-template-columns: 1fr 1fr 1fr;
+$grid-template-rows: auto;
+$grid-column-gap: 20px;
+$grid-row-gap: 10px;
+$grid-template-areas: 
+    " header    header   header"
+    " body      body     body"
+    " footer    footer   footer";
+$grid-area: body;
+$grid-area: header;
+$grid-area: footer;

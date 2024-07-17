@@ -1,0 +1,35 @@
+@mixin position-image ($pos,$size){
+    background-position: $pos;
+    background-size: $size;
+}
+.bg-index {
+    background-image: $bg-img-index;
+    @include position-image (center, cover)
+ }
+@mixin direction-align ($direc,$ai){
+    display: flex;
+    flex-direction: $direc;
+    align-items: $ai;
+}
+.alineados {
+    @include direction-align(column, center)
+}
+.img-1 {
+    @include direction-align(column, center)
+}
+@mixin boxmodel ($p,$m) {
+    padding: $p;
+    margin: $m;
+}
+@mixin padding ($pt,$pl,$pr,$pb) {
+    padding-top: $pt;
+    padding-left: $pl;
+    padding-right: $pr;
+    padding-bottom: $pb;
+}
+@mixin margin ($mt,$ml,$mr,$mb){
+    margin-top: $mt;
+    margin-left: $ml;
+    margin-right: $mr;
+    margin-bottom: $mb;
+}
