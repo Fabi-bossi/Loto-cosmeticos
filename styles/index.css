@@ -1,0 +1,21 @@
+.bg-color {
+    background-color: rgb(254 233 235) !important;
+}
+.width-80 {
+    width: 80px;
+}
+.width-50 {
+  width: 50px;
+}
+.height-50 {
+  height: 50px;
+}
+.fade-in {
+   opacity: 0;
+   animation: fadeInAnimation 4s forwards;
+}
+@keyframes fadeInAnimation {
+   to {
+     opacity: 1;
+   }
+}

@@ -9,20 +9,21 @@
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: rgb(254 233 235) !important;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-color">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <div class="row">
-                    <div class="col-1">
-                        <img class="titulo-1" src="./asset/loto.png" width="50px" height="50px" alt="">
+                    <div class="col-2">
+                        <img class="titulo-1" src="../asset/loto.png" width="50px" height="50px" alt="">
                     </div>
                     <div class="col-8">
                         <h1 class="titulo">LOTO COSMETICS</h1>
                     </div>
-                    <div class="col-1">
-                        <img class="titulo-2" src="./asset/loto.png" width="50px" height="50px" alt="">
+                    <div class="col-2">
+                        <img class="titulo-2" src="../asset/loto.png" width="50px" height="50px" alt="">
                     </div>
                 </div>
             </a>        
@@ -30,7 +31,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>        
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-10 ml-5">
                     <li class="nav-item">
                         <a class="nav-link" href="#">TIENDA</a>
                     </li>
@@ -46,8 +47,8 @@
                 </ul> 
                 <div class="pl-5">       
                     <form class="form-inline ml-5">
-                        <img src="./asset/lupa.png" width="20px" height="20px" alt="">
-                        <img src="./asset/bolsa.png" width="20px" height="20px" alt="">
+                        <img src="../asset/lupa.png" width="20px" height="20px" alt="">
+                        <img src="../asset/bolsa.png" width="20px" height="20px" alt="">
                     </form>
                 </div>
             </div>
@@ -56,7 +57,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 border-bottom mb-5">
-                <h3 class="titulo-3 text-left my-4 my-md-5">PRODUCTOS</h3>
+                <h2 class="titulo-3 text-left my-4 my-md-5 fade-in">PRODUCTOS</h2>
             </div>
         </div>
         <div class="row">
@@ -66,7 +67,7 @@
                         <div class="row pt-5 pb-3 border-bottom">
                             <div class="col-lg-12 mb-4 mb-lg-0">
                                 <section class="sec-3">
-                                    <h4 class="titulo-3">Categorias</h4>
+                                    <h3 class="titulo-3">Categorias</h3>
                                 </section>                
                                 <button type="button" class="btn btn-link">Skin care (12)</button><br/>
                                 <button type="button" class="btn btn-link">Accesorios (15)</button><br/>
@@ -81,7 +82,7 @@
                         <div class="row">
                             <div class="col-lg-12 mb-4 mb-lg-0">
                                 <section class="sec-3">
-                                    <h4 class="titulo-3">Preferencias</h4>
+                                    <h3 class="titulo-3">Preferencias</h3>
                                 </section>                
                                 <button type="button" class="btn btn-link">Glutten free (3)</button><br/>
                                 <button type="button" class="btn btn-link">Apto para embarazadas (10)</button><br/>
@@ -95,37 +96,41 @@
                             <h4>Precio $</h4>
                             <div class="row">
                                 <div class="col-5">
-                                    <input type="text" style="width: 80px">
+                                    <input type="text" class="width-80">
                                 </div>
                                 <div class="col-2 text-center">
                                     <h5>-</h5>
                                 </div>
                                 <div class="col-5">
-                                    <input type="text" style="width: 80px">
+                                    <input type="text" class="width: 80px">
                                 </div>                        
                             </div>
                         </div>
-                            <button>ok</button>
+                        <button type="button" class="btn btn-secondary mt-2 pt-1">OK</button>                        
                     </div>
                     <div class="container pt-4 ">
                         <div class="row">
-                            <h4>Marcas</h4>
-                            <ol>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            </ol>
+                            <div class="col-lg-12 mb-4 mb-lg-0">
+                                <section class="sec-3">
+                                    <h4 class="titulo-3">Marcas</h4>
+                                </section>                
+                                <button type="button" class="btn btn-link">Cosrx (10)</button><br/>
+                                <button type="button" class="btn btn-link">kocostar (15)</button><br/>
+                                <button type="button" class="btn btn-link">Kerasys (18)</button><br/>                                  
+                            </div>                            
                         </div>
                     </div>
                     <div class="container pt-4 border-top">
                         <div class="row">
-                            <h4>Especiales</h4>
-                            <ol>
-                                <li></li>
-                                <li></li>
-                            </ol>
+                            <div class="col-lg-12 mb-4 mb-lg-0">
+                                <section class="sec-3">
+                                    <h4 class="titulo-3">Especiales</h4>
+                                </section>                
+                                <button type="button" class="btn btn-link">Sale (10)</button><br/>
+                                <button type="button" class="btn btn-link">New (15)</button><br/>                                                                 
+                            </div>                            
                         </div>
-                    </div>
+                    </div>       
                 </section>
             </div>   
             <div class="col-9">
@@ -134,8 +139,8 @@
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Ordenar por:</option>
                             <option value="1">Mas recientes</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option value="2">Menor precio</option>
+                            <option value="3">Mayor precio</option>
                         </select>
                     </div>
                 </div>       
@@ -144,7 +149,7 @@
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="img text-center">
                                 <div class="row">
-                                    <img class="img-1" src="./asset/uñas1.webp" alt="">
+                                    <img class="img-1" src="../asset/uñas1.webp" alt="">
                                 </div>
                                 <div class="row">
                                     <a href="#">UÑAS EN GEL LISTAS (PRESS ON) - Milk Tea Latte</a>
@@ -155,7 +160,7 @@
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="img text-center">
                                 <div class="row">    
-                                    <img class="img-1" src="./asset/esponja-1.webp" alt="">
+                                    <img class="img-1" src="../asset/esponja-1.webp" alt="">
                                 </div>
                                 <div class="row">    
                                     <a href="#">ESPONJA FACIAL KONJAC - Cenizas Activas de Bambú</a>
@@ -166,7 +171,7 @@
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="img text-center">
                                 <div class="row">    
-                                    <img class="img-1" src="./asset/crema de colageno.webp" alt="">
+                                    <img class="img-1" src="../asset/crema de colageno.webp" alt="">
                                 </div>
                                 <div class="row">    
                                     <a href="#">T1 COLLAGEN CREAM - Crema de colágeno</a>
@@ -177,7 +182,7 @@
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="img text-center">
                                 <div class="row">    
-                                    <img class="img-1" src="./asset/piedra de cuarzo.webp" alt="">
+                                    <img class="img-1" src="../asset/piedra de cuarzo.webp" alt="">
                                 </div>
                                 <div class="row">    
                                     <a href="#">HEART GUA SHA CUARZO ROSA - GUA SHA DE CUARZO ROSA PARA GIMNASIA FACIAL</a>
@@ -190,44 +195,44 @@
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="img text-center">
                                 <div class="row">
-                                    <img class="img-1" src="./asset/uñas1.webp" alt="">
+                                    <img class="img-1" src="../asset/crema.webp" alt="">
                                 </div>
                                 <div class="row">
-                                    <a href="#">UÑAS EN GEL LISTAS (PRESS ON) - Milk Tea Latte</a>
-                                    <a href="#">$800</a>
+                                    <a href="#">ADVANCED SNAIL 92 ALL IN ONE CREAM COSRX - Crema hidratante</a>
+                                    <a href="#">$1800</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="img text-center">
                                 <div class="row">    
-                                    <img class="img-1" src="./asset/esponja-1.webp" alt="">
+                                    <img class="img-1" src="../asset/paleta.webp" alt="">
                                 </div>
                                 <div class="row">    
-                                    <a href="#">ESPONJA FACIAL KONJAC - Cenizas Activas de Bambú</a>
-                                    <a href="#">$250</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="img text-center">
-                                <div class="row">    
-                                    <img class="img-1" src="./asset/crema de colageno.webp" alt="">
-                                </div>
-                                <div class="row">    
-                                    <a href="#">T1 COLLAGEN CREAM - Crema de colágeno</a>
-                                    <a href="#">$1250</a>
+                                    <a href="#">PALETA MEZCLADORA PARA MAQUILLAJE - GOODCHANGE</a>
+                                    <a href="#">$300</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="img text-center">
                                 <div class="row">    
-                                    <img class="img-1" src="./asset/piedra de cuarzo.webp" alt="">
+                                    <img class="img-1" src="../asset/retinol.webp" alt="">
                                 </div>
                                 <div class="row">    
-                                    <a href="#">HEART GUA SHA CUARZO ROSA - GUA SHA DE CUARZO ROSA PARA GIMNASIA FACIAL</a>
-                                    <a href="#">$650</a>
+                                    <a href="#">THE RETINOL 0.5 OIL COSRX - Serum/Aceite Retinol 0.5 Vitamina E y escualeno 20ML</a>
+                                    <a href="#">$2500</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="img text-center">
+                                <div class="row">    
+                                    <img class="img-1" src="../asset/patch.webp" alt="">
+                                </div>
+                                <div class="row">    
+                                    <a href="#">ACNE PIMPLE MASTER PATCH COSRX - Parches curativos para granos/acné</a>
+                                    <a href="#">$299</a>
                                 </div>
                             </div>
                         </div>
@@ -236,21 +241,54 @@
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="img text-center">
                                 <div class="row">
-                                    <img class="img-1" src="./asset/uñas1.webp" alt="">
+                                    <img class="img-1" src="../asset/unas-stickers.webp" alt="">
                                 </div>
                                 <div class="row">
-                                    <a href="#">UÑAS EN GEL LISTAS (PRESS ON) - Milk Tea Latte</a>
-                                    <a href="#">$800</a>
+                                    <a href="#">UÑAS STICKERS EN GEL - True Black</a>
+                                    <a href="#">$400</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="img text-center">
                                 <div class="row">    
-                                    <img class="img-1" src="./asset/esponja-1.webp" alt="">
+                                    <img class="img-1" src="../asset/acondicionador.webp" alt="">
                                 </div>
                                 <div class="row">    
-                                    <a href="#">ESPONJA FACIAL KONJAC - Cenizas Activas de Bambú</a>
+                                    <a href="#">ACONDICIONADOR - KERASYS ORIENTAL PREMIUM (600) ml - Reparación, nutrición y fuerza</a>
+                                    <a href="#">$1100</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="img text-center">
+                                <div class="row">    
+                                    <img class="img-1" src="../asset/masc.webp" alt="">
+                                </div>
+                                <div class="row">    
+                                    <a href="#">MASCARILLA DE TRATAMIENTO KERASYS - ADVANCED MOISTURE AMPOULE HAIR PACK (300ml) - Mascarilla Hidratante y fortalecedora</a>
+                                    <a href="#">$900</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="img text-center">
+                                <div class="row">    
+                                    <img class="img-1" src="../asset/peine.webp" alt="">
+                                </div>
+                                <div class="row">    
+                                    <a href="#">PEINE PARA EL CABELLO DE BAMBÚ CON MANGO - BAMBOO HAIR COMB</a>
+                                    <a href="#">$200</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="img text-center">
+                                <div class="row">    
+                                    <img class="img-1" src="../asset/pinzas.webp" alt="">
+                                </div>
+                                <div class="row">    
+                                    <a href="#">DÚO PINZAS DE CEJAS COLOR ROSA - SLANTED POINTED TWEEZERS SET</a>
                                     <a href="#">$250</a>
                                 </div>
                             </div>
@@ -258,22 +296,33 @@
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="img text-center">
                                 <div class="row">    
-                                    <img class="img-1" src="./asset/crema de colageno.webp" alt="">
+                                    <img class="img-1" src="../asset/masajeador.webp" alt="">
                                 </div>
                                 <div class="row">    
-                                    <a href="#">T1 COLLAGEN CREAM - Crema de colágeno</a>
-                                    <a href="#">$1250</a>
+                                    <a href="#">MASAJEADOR DE CUERO CABELLUDO - HEAD MASSAGER</a>
+                                    <a href="#">$250</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="img text-center">
                                 <div class="row">    
-                                    <img class="img-1" src="./asset/piedra de cuarzo.webp" alt="">
+                                    <img class="img-1" src="../asset/lamp.webp" alt="">
                                 </div>
                                 <div class="row">    
-                                    <a href="#">HEART GUA SHA CUARZO ROSA - GUA SHA DE CUARZO ROSA PARA GIMNASIA FACIAL</a>
-                                    <a href="#">$650</a>
+                                    <a href="#">MINI LAMP - DKLP09</a>
+                                    <a href="#">$350</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="img text-center">
+                                <div class="row">    
+                                    <img class="img-1" src="../asset/mask.webp" alt="">
+                                </div>
+                                <div class="row">    
+                                    <a href="#">HYDRATING HAPPY MASK - Mascarilla facial hidratante</a>
+                                    <a href="#">$150</a>
                                 </div>
                             </div>
                         </div>
@@ -282,23 +331,23 @@
             </div>  
         </div>
     </div>
-    <footer class="bg-light pt-5">
+    <footer class="bg-light mt-5 pt-5 bg-color">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-2" style="display: -webkit-inline-box;">
-                    <img src="asset/telefono.jpg" alt="" width="50">
+                    <img src="../asset/telefono.jpg" alt="" width="50">
                     <h6 class="nota">099858455</h6>
                 </div>
                 <div class="col-md-3" style="display: -webkit-inline-box;">
-                    <img src="asset/direccion.png" alt="" width="50">
+                    <img src="../asset/direccion.png" alt="" width="50">
                     <h6 class="texto-1">Av.Rivera 4158</h6>
                 </div>
                 <div class="col-md-3" style="display: -webkit-inline-box;">
-                    <img src="asset/mail.png" alt="" width="50">
+                    <img src="../asset/mail.png" alt="" width="50">
                     <a href="#" class="texto-1">@lotocosmeticos.com</a>
                 </div>
                 <div class="col-md-4" style="display: -webkit-inline-box; text-align: center;">
-                    <img src="asset/reloj.png" alt="" width="50">
+                    <img src="../asset/reloj.png" alt="" width="50">
                     <h6 class="texto-2">Lunes a viernes de 10 a 17hs</h6>
                     </div>
                 </div>
@@ -306,14 +355,14 @@
             </div>
             <div class="row pt-5">
                 <div class="col-md-12" style=" text-align: center;">
-                    <img src="asset/fCEBOOK.png" alt="" width="50">
-                    <img src="asset/instagram.jpg" alt="" width="50">
-                    <img src="asset/linkeding.png" alt="" width="50">
+                    <img src="../asset/fCEBOOK.png" alt="" width="50">
+                    <img src="../asset/instagram.jpg" alt="" width="50">
+                    <img src="../asset/linkeding.png" alt="" width="50">
                 </div>
              </div>
         </div>
     </footer>    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>  
 </body>
 </html>
